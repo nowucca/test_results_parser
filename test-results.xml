@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" tests="17" failures="5" errors="0" skipped="0" time="46.357" timestamp="2021-01-30T14:50:06" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_2_API_30(AVD) - 11" />
+    <property name="flavor" value="" />
+    <property name="project" value="app" />
+  </properties>
+  <testcase name="clickingAnswer0ThenAnswer1DeselectsAnswer0" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="3.589" />
+  <testcase name="clickingAnswer0EnablesSubmitButton" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="2.223" />
+  <testcase name="clickingAnswer1ThenHint3TimesDisablesAnswer1" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="1.991">
+    <failure>androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: 'not is enabled' doesn't match the selected view.
+Expected: not is enabled
+Got: "AppCompatButton{id=2131165254, res-name=answer_1_button, visibility=VISIBLE, width=974, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=true, layout-params=android.widget.LinearLayout$LayoutParams&#64;8da8688, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=152.0, text=Deep third man, input-type=0, ime-target=false, has-links=false}"
+
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:1736)
+at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:16)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:36)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:103)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:31)
+at edu.vt.cs.cs5254.multiquiz.QuizActivityTest.clickingAnswer1ThenHint3TimesDisablesAnswer1(QuizActivityTest.kt:124)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:154)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:395)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+Caused by: junit.framework.AssertionFailedError: 'not is enabled' doesn't match the selected view.
+Expected: not is enabled
+Got: "AppCompatButton{id=2131165254, res-name=answer_1_button, visibility=VISIBLE, width=974, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=true, layout-params=android.widget.LinearLayout$LayoutParams&#64;8da8688, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=152.0, text=Deep third man, input-type=0, ime-target=false, has-links=false}"
+
+at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:17)
+at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:15)
+at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:10)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:11)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:2)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at android.os.Handler.handleCallback(Handler.java:938)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:223)
+at android.app.ActivityThread.main(ActivityThread.java:7656)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+</failure>
+  </testcase>
+  <testcase name="all4QuestionsCorrect6Hints" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="5.249">
+    <failure>androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: 'with text: is "6"' doesn't match the selected view.
+Expected: with text: is "6"
+Got: "AppCompatTextView{id=2131165435, res-name=total_hints_used_value, visibility=VISIBLE, width=47, height=77, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams&#64;69953aa, tag=null, root-is-layout-requested=false, has-input-connection=false, x=210.0, y=0.0, text=0, input-type=0, ime-target=false, has-links=false}"
+
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:1736)
+at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:16)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:36)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:103)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:31)
+at edu.vt.cs.cs5254.multiquiz.QuizActivityTest.all4QuestionsCorrect6Hints(QuizActivityTest.kt:286)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:154)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:395)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+Caused by: junit.framework.AssertionFailedError: 'with text: is "6"' doesn't match the selected view.
+Expected: with text: is "6"
+Got: "AppCompatTextView{id=2131165435, res-name=total_hints_used_value, visibility=VISIBLE, width=47, height=77, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams&#64;69953aa, tag=null, root-is-layout-requested=false, has-input-connection=false, x=210.0, y=0.0, text=0, input-type=0, ime-target=false, has-links=false}"
+
+at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:17)
+at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:15)
+at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:10)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:11)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:2)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at android.os.Handler.handleCallback(Handler.java:938)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:223)
+at android.app.ActivityThread.main(ActivityThread.java:7656)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+</failure>
+  </testcase>
+  <testcase name="clickingAnswer0SelectsAnswer0" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="1.685" />
+  <testcase name="initiallyHintButtonIsEnabled" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="1.674" />
+  <testcase name="buttonSelectionPersistsThroughOrientationChanges" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="2.778" />
+  <testcase name="clickingHint3TimesDisablesHint" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="1.917">
+    <failure>androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: 'not is enabled' doesn't match the selected view.
+Expected: not is enabled
+Got: "AppCompatButton{id=2131165318, res-name=hint_button, visibility=VISIBLE, width=231, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.RelativeLayout$LayoutParams&#64;294a481, tag=null, root-is-layout-requested=false, has-input-connection=false, x=13.0, y=13.0, text=H, input-type=0, ime-target=false, has-links=false}"
+
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:1736)
+at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:16)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:36)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:103)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:31)
+at edu.vt.cs.cs5254.multiquiz.QuizActivityTest.clickingHint3TimesDisablesHint(QuizActivityTest.kt:110)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:154)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:395)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+Caused by: junit.framework.AssertionFailedError: 'not is enabled' doesn't match the selected view.
+Expected: not is enabled
+Got: "AppCompatButton{id=2131165318, res-name=hint_button, visibility=VISIBLE, width=231, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.RelativeLayout$LayoutParams&#64;294a481, tag=null, root-is-layout-requested=false, has-input-connection=false, x=13.0, y=13.0, text=H, input-type=0, ime-target=false, has-links=false}"
+
+at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:17)
+at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:15)
+at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:10)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:11)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:2)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at android.os.Handler.handleCallback(Handler.java:938)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:223)
+at android.app.ActivityThread.main(ActivityThread.java:7656)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+</failure>
+  </testcase>
+  <testcase name="clickingAnswer0ThenAnswer1ThenAnswer0DeselectsAnswer1AndSelectAnswer0" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="2.29" />
+  <testcase name="initiallyNoAnswersAreSelected" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="2.388" />
+  <testcase name="changeOrientationToLandscapeAndBack" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="3.659" />
+  <testcase name="exactly2QuestionsCorrect4Hints" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="4.218">
+    <failure>androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: 'with text: is "4"' doesn't match the selected view.
+Expected: with text: is "4"
+Got: "AppCompatTextView{id=2131165435, res-name=total_hints_used_value, visibility=VISIBLE, width=47, height=77, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams&#64;b3b1dd6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=210.0, y=0.0, text=0, input-type=0, ime-target=false, has-links=false}"
+
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:1736)
+at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:16)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:36)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:103)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:31)
+at edu.vt.cs.cs5254.multiquiz.QuizActivityTest.exactly2QuestionsCorrect4Hints(QuizActivityTest.kt:247)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:154)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:395)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+Caused by: junit.framework.AssertionFailedError: 'with text: is "4"' doesn't match the selected view.
+Expected: with text: is "4"
+Got: "AppCompatTextView{id=2131165435, res-name=total_hints_used_value, visibility=VISIBLE, width=47, height=77, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams&#64;b3b1dd6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=210.0, y=0.0, text=0, input-type=0, ime-target=false, has-links=false}"
+
+at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:17)
+at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:15)
+at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:10)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:11)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:2)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at android.os.Handler.handleCallback(Handler.java:938)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:223)
+at android.app.ActivityThread.main(ActivityThread.java:7656)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+</failure>
+  </testcase>
+  <testcase name="clickingAnswer0ThenSubmitPutsButtonsIntoInitStates" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="1.379" />
+  <testcase name="initiallySubmitButtonIsDisabled" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="2.118" />
+  <testcase name="all4QuestionsCorrectNoHints" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="2.862" />
+  <testcase name="clickingAnswer1ThenHint3TimesDisablesSubmitButton" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="3.038">
+    <failure>androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: 'not is enabled' doesn't match the selected view.
+Expected: not is enabled
+Got: "AppCompatButton{id=2131165411, res-name=submit_button, visibility=VISIBLE, width=231, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.RelativeLayout$LayoutParams&#64;dc94631, tag=null, root-is-layout-requested=false, has-input-connection=false, x=836.0, y=13.0, text=Submit, input-type=0, ime-target=false, has-links=false}"
+
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:1736)
+at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:16)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:36)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:103)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:31)
+at edu.vt.cs.cs5254.multiquiz.QuizActivityTest.clickingAnswer1ThenHint3TimesDisablesSubmitButton(QuizActivityTest.kt:138)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:154)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:395)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+Caused by: junit.framework.AssertionFailedError: 'not is enabled' doesn't match the selected view.
+Expected: not is enabled
+Got: "AppCompatButton{id=2131165411, res-name=submit_button, visibility=VISIBLE, width=231, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.RelativeLayout$LayoutParams&#64;dc94631, tag=null, root-is-layout-requested=false, has-input-connection=false, x=836.0, y=13.0, text=Submit, input-type=0, ime-target=false, has-links=false}"
+
+at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:17)
+at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:15)
+at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:10)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:11)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:2)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at android.os.Handler.handleCallback(Handler.java:938)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:223)
+at android.app.ActivityThread.main(ActivityThread.java:7656)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+</failure>
+  </testcase>
+  <testcase name="appContextGivesCorrectPackageName" classname="edu.vt.cs.cs5254.multiquiz.QuizActivityTest" time="0.793" />
+</testsuite>
